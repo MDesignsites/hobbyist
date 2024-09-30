@@ -1,0 +1,54 @@
+.product-title {
+  font-size: 6rem; // Equivalent to text-8xl in Tailwind
+  font-weight: 600; // Equivalent to font-semibold
+  text-transform: uppercase; // Equivalent to uppercase
+  font-family: 'Oswald', sans-serif;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #22c55e, #1d4ed8); // From green-500 to blue-700
+  color: transparent; // Equivalent to text-transparent
+  text-align: center; // Equivalent to text-center
+  margin-top: 3.5rem; // Equivalent to my-14
+  margin-bottom: 3.5rem;
+
+  // Mobile view (max-width: 640px)
+  @media (max-width: 640px) {
+      font-size: 3rem; // Smaller font size for mobile
+      margin-top: 2rem; // Adjust top margin for mobile
+      margin-bottom: 2rem; // Adjust bottom margin for mobile
+  }
+
+  // Tablet view (641px to 1024px)
+  @media (min-width: 641px) and (max-width: 1024px) {
+      font-size: 4rem; // Smaller font size for tablet
+      margin-top: 2.5rem; // Adjust top margin for tablet
+      margin-bottom: 2.5rem; // Adjust bottom margin for tablet
+  }
+}
+
+.product-description {
+  margin-left: 20rem; // Equivalent to mx-80
+  margin-right: 20rem;
+  margin-bottom: 5rem;
+  font-family: 'Oswald', sans-serif;
+  text-align: justify; // Equivalent to text-justify
+
+  p {
+      margin: 0; // Remove any default margins for <p>
+  }
+
+  // Mobile view (max-width: 640px)
+  @media (max-width: 640px) {
+      margin-left: 1rem; // Adjust left margin for mobile
+      margin-right: 1rem; // Adjust right margin for mobile
+      font-size: 0.875rem; // Smaller font size for mobile
+      margin-bottom: 3rem; // Adjust bottom margin for mobile
+  }
+
+  // Tablet view (641px to 1024px)
+  @media (min-width: 641px) and (max-width: 1024px) {
+      margin-left: 5rem; // Adjust left margin for tablet
+      margin-right: 5rem; // Adjust right margin for tablet
+      font-size: 1rem; // Slightly smaller font size for tablet
+      margin-bottom: 4rem; // Adjust bottom margin for tablet
+  }
+}

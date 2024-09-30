@@ -1,0 +1,109 @@
+.products {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .products-title {
+        font-size: 6rem; // Adjust for your design
+        font-weight: 600;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 1rem; // Space below the title
+        text-transform: uppercase;
+        background-clip: text;
+        background-image: linear-gradient(to bottom, white, #22c55e); // Green gradient
+        color: transparent;
+        filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 1)); // Drop shadow effect
+        text-align: center;
+    }
+}
+
+.image-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px; // Adjust spacing between cards
+    padding: 1rem; // Padding for the container
+    flex-wrap: wrap; // Allow cards to wrap for smaller screens
+
+    .image-card {
+        position: relative;
+        max-width: 300px; // Limit width for better responsiveness
+        overflow: hidden;
+        border-radius: 1rem; // Adjust for rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); // Shadow effect
+        transition: transform 0.2s;
+
+        // Hover effect for larger screens only
+        &:hover {
+            transform: scale(1.1); // Scale on hover for larger screens
+
+            // Reveal overlay content on hover
+            .overlay .content {
+                opacity: 1; // Show content on hover
+            }
+        }
+
+        .image {
+            display: block;
+            width: 100%; // Make the image responsive
+            height: auto; // Maintain aspect ratio
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: flex-end;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); // Gradient background
+            opacity: 1;
+            transition: opacity 0.2s;
+
+            .content {
+                padding: 1rem;
+                color: white;
+                text-align: center;
+                opacity: 0; // Initially hidden for desktop
+                transition: opacity 0.2s; // Smooth transition for opacity
+            }
+        }
+    }
+}
+
+// Responsive styles
+@media (max-width: 1024px) {
+    .image-card-container {
+        flex-direction: column; // Stack cards vertically
+        align-items: center; // Center align cards
+    }
+
+    .image-card {
+        &:hover {
+            transform: none; // Remove scaling on hover for tablet
+        }
+
+        .overlay {
+            display: flex; // Show the overlay on tablet
+            opacity: 1; // Ensure the overlay is visible
+        }
+
+        .content {
+            opacity: 1; // Always show content on tablet
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .image-card {
+        max-width: 100%; // Make cards full width
+        margin-bottom: 1rem; // Space between cards
+
+        .overlay {
+            display: flex; // Show the overlay on mobile
+            opacity: 1; // Ensure the overlay is visible
+        }
+
+        .content {
+            opacity: 1; // Always show content
+            text-align: left; // Adjust text alignment if needed
+        }
+    }
+}

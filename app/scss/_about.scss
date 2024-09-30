@@ -1,0 +1,74 @@
+.about-section {
+  background-color: #063ba6; // Replace deep-navy-blue if required
+  background-image: url('app/assets/1crocbg.png'); // For the background image (use the actual path)
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // shadow-2xl
+  padding-top: 9rem; // py-36
+  padding-bottom: 9rem;
+  position: relative;
+  display: flex; // Use flexbox for layout
+  flex-direction: column; // Stack content vertically
+  align-items: center; // Center align content horizontally
+  text-align: center; // Center text
+
+  .about-content {
+      max-width: 1200px; // Limit the maximum width of content
+      width: 100%; // Full width of the container
+      padding: 2.5rem; // p-10
+      box-sizing: border-box; // Include padding in width calculation
+
+      // Responsive adjustments
+      @media (max-width: 640px) {
+          padding: 1rem; // Adjust padding for mobile
+      }
+  }
+
+  .about-title {
+    font-size: 6rem; // Adjust for your design
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 1rem; // Space below the title
+    text-transform: uppercase;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, white, #22c55e); // Green gradient
+    color: transparent;
+    filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 1)); // Drop shadow effect
+    position: absolute;
+    top: -4.5rem; // Positioning above the content
+    left: 50%; // Center horizontally
+    transform: translateX(-50%); // Adjust for centering
+    text-align: center; // Center text
+
+    // Responsive adjustments
+    @media (max-width: 1024px) {
+        font-size: 4rem; // Adjust font size for tablet
+        margin-bottom: 2rem; // Adjust spacing for the title
+        top: 0; // Positioning at the default flow
+    }
+
+    @media (max-width: 640px) {
+        font-size: 4rem; // Smaller font size for mobile
+        margin-bottom: 1rem; // Adjust spacing for the title
+        top: 0; // Positioning at the default flow
+    }
+}
+
+
+  .text-white {
+      color: white;
+      margin-top: 2rem; // my-8
+      margin-bottom: 2rem;
+
+      // Responsive adjustments
+      @media (max-width: 640px) {
+          font-size: 1.25rem; // Adjust font size for mobile
+          margin-top: 1rem; // Adjust spacing for mobile
+          margin-bottom: 1rem; // Adjust spacing for mobile
+      }
+
+      @media (min-width: 641px) and (max-width: 1024px) {
+          font-size: 1.5rem; // Adjust font size for tablets
+      }
+  }
+}
