@@ -277,7 +277,7 @@ body {
 
 .about-section {
   background-color: #063ba6;
-  background-image: url("/app/assets/1crocbg.png");
+  background-image: url("app/assets/1crocbg.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
