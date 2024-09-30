@@ -1,0 +1,25 @@
+.product-title {
+    font-size: 6rem; // Equivalent to text-8xl in Tailwind
+    font-weight: 600; // Equivalent to font-semibold
+    text-transform: uppercase; // Equivalent to uppercase
+    font-family: 'Oswald', sans-serif;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, #22c55e, #1d4ed8); // From green-500 to blue-700
+    color: transparent; // Equivalent to text-transparent
+    text-align: center; // Equivalent to text-center
+    margin-top: 3.5rem; // Equivalent to my-14
+    margin-bottom: 3.5rem;
+  }
+  
+  .product-description {
+    margin-left: 20rem; // Equivalent to mx-80
+    margin-right: 20rem;
+    margin-bottom: 5rem;
+    font-family: 'Oswald', sans-serif;
+    text-align: justify; // Equivalent to text-justify
+  
+    p {
+      margin: 0; // Remove any default margins for <p>
+    }
+  }
+  

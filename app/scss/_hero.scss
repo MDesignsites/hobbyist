@@ -1,0 +1,39 @@
+.hero-section {
+    background-image: url(https://images.pexels.com/photos/2757549/pexels-photo-2757549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: black;
+    padding: 5rem 0; // Adjust for py-20
+
+    .hero-gradient {
+        background: linear-gradient(156deg, rgba(41, 185, 86, 1) 0%, rgba(8, 45, 128, 1) 37%, rgba(8, 45, 128, 1) 55%);
+        position: relative;
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: none; // Start with none for carousel
+            }
+        }
+
+        .hero-title {
+            color: white;
+            font-size: 3.75rem; // Adjust for text-6xl
+            font-family: "Oswald", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 2.5rem; // Adjust for spacing
+            left: 2.5rem; // Adjust for spacing
+            z-index: 10;
+
+            .block {
+                display: block;
+            }
+        }
+    }
+}

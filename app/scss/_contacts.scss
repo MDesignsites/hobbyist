@@ -1,0 +1,21 @@
+.contact-title {
+    font-size: 6rem; // text-8xl
+    font-weight: 600; // font-semibold
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    background-clip: text;
+    background-image: linear-gradient(to bottom, #22c55e, #3b82f6); // from-green-500 to-blue-700
+    color: transparent; // text-transparent
+    text-align: center; // text-center
+    margin-top: 3.5rem; // my-14 (top)
+    margin-bottom: 3.5rem; // my-14 (bottom)
+  }
+  
+  .contact-content {
+    margin-left: 20rem; // mx-80
+    margin-right: 20rem;
+    margin-bottom: 5rem;
+    text-align: justify; // text-justify
+    font-family: 'Oswald', sans-serif;
+  }
+  

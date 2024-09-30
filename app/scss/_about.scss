@@ -1,0 +1,38 @@
+.about-section {
+    background-color: #063ba6; // Replace deep-navy-blue if required
+    background-image: url('/app/assets/1crocbg.png'); // For the background image (use the actual path)
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); // shadow-2xl
+    padding-top: 9rem; // py-36
+    padding-bottom: 9rem;
+    position: relative;
+  
+    .about-content {
+      margin-left: 20rem; // mx-80
+      margin-right: 20rem;
+      padding: 2.5rem; // p-10
+    }
+  
+    .about-title {
+      font-size: 6rem; // Adjust for your design
+      font-weight: 600;
+      font-family: "Oswald", sans-serif;
+      margin-bottom: 1rem; // Space below the title
+      text-transform: uppercase;
+      background-clip: text;
+      background-image: linear-gradient(to bottom, white, #22c55e); // Green gradient
+      color: transparent;
+      filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 1)); // Drop shadow effect
+      position: absolute;
+      top: -4.5rem; // Positioning above the content
+      left: 35rem; // Adjust for left margin
+    }
+  
+    .text-white {
+      color: white;
+      margin-top: 2rem; // my-8
+      margin-bottom: 2rem;
+    }
+  }
+  
