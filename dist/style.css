@@ -593,8 +593,8 @@ section .contact-content {
     margin-top: 2rem;
     margin-bottom: 2rem;
     position: absolute;
-    bottom: -95rem;
-    left: 13rem;
+    bottom: -125rem;
+    left: 8rem;
   }
 }
 @media (min-width: 641px) and (max-width: 1024px) {
