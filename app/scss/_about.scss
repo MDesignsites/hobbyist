@@ -59,16 +59,6 @@
       color: white;
       margin-top: 2rem; // my-8
       margin-bottom: 2rem;
-
-      // Responsive adjustments
-      @media (max-width: 640px) {
-          font-size: 1.25rem; // Adjust font size for mobile
-          margin-top: 1rem; // Adjust spacing for mobile
-          margin-bottom: 1rem; // Adjust spacing for mobile
-      }
-
-      @media (min-width: 641px) and (max-width: 1024px) {
-          font-size: 1.5rem; // Adjust font size for tablets
-      }
+      font-size: 1.5rem;
   }
 }
