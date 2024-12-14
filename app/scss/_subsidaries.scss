@@ -30,13 +30,13 @@
 
             // Responsive adjustments
             @media (max-width: 1024px) {
-                font-size: 3rem; // Adjust font size for tablet
+                font-size: 5rem; // Adjust font size for tablet
                 margin-bottom: 2rem; // Adjust spacing for the title
                 position: static; // Use static positioning for better flow
             }
 
             @media (max-width: 640px) {
-                font-size: 2rem; // Smaller font size for mobile
+                font-size: 3.5rem; // Smaller font size for mobile
                 margin-bottom: 1rem; // Adjust spacing for the title
                 position: static; // Use static positioning for better flow
             }
