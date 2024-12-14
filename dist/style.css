@@ -471,7 +471,7 @@ section .contact-content {
 /* Media query for screens with max-width: 640px (mobile) */
 @media (max-width: 640px) {
   .tempTitle a {
-    font-size: 2rem; /* Smaller font size for mobile screens */
+    font-size: 1rem; /* Smaller font size for mobile screens */
     bottom: 25rem; /* Adjust bottom spacing for smaller screens */
     left: 1rem; /* Adjust left spacing for smaller screens */
   }
@@ -524,7 +524,7 @@ section .contact-content {
 }
 @media (max-width: 640px) {
   .subsidaries-section .subsidaries-content .subsidaries-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     position: static;
   }
@@ -577,7 +577,7 @@ section .contact-content {
 }
 @media (max-width: 640px) {
   .products .products-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
