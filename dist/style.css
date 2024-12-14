@@ -288,6 +288,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  text-align: justify;
 }
 .about-section .about-content {
   max-width: 1200px;
@@ -321,14 +323,16 @@ body {
   .about-section .about-title {
     font-size: 4rem;
     margin-bottom: 2rem;
-    top: 0;
+    position: absolute;
+    top: -3.5rem;
   }
 }
 @media (max-width: 640px) {
   .about-section .about-title {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
-    top: 0;
+    position: absolute;
+    top: -3rem;
   }
 }
 .about-section .text-white {
@@ -472,7 +476,7 @@ section .contact-content {
 @media (max-width: 640px) {
   .tempTitle a {
     font-size: 1rem; /* Smaller font size for mobile screens */
-    bottom: 25rem; /* Adjust bottom spacing for smaller screens */
+    bottom: 35rem; /* Adjust bottom spacing for smaller screens */
     left: 1rem; /* Adjust left spacing for smaller screens */
   }
 }
@@ -480,7 +484,7 @@ section .contact-content {
 @media (min-width: 641px) and (max-width: 1024px) {
   .tempTitle a {
     font-size: 3rem; /* Medium font size for tablets */
-    bottom: 15rem; /* Adjust bottom spacing for tablets */
+    bottom: 25rem; /* Adjust bottom spacing for tablets */
     left: 1rem; /* Adjust left spacing for tablets */
   }
 }
@@ -498,6 +502,8 @@ section .contact-content {
   padding: 2.5rem;
   box-sizing: border-box;
   position: relative;
+  font-family: "Oswald", sans-serif;
+  text-align: justify;
 }
 .subsidaries-section .subsidaries-content .subsidaries-title {
   font-size: 6rem;
@@ -514,19 +520,23 @@ section .contact-content {
   top: -10rem;
   left: 1rem;
   width: 100%;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .subsidaries-section .subsidaries-content .subsidaries-title {
     font-size: 5rem;
-    margin-bottom: 2rem;
-    position: static;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: -9rem;
   }
 }
 @media (max-width: 640px) {
   .subsidaries-section .subsidaries-content .subsidaries-title {
     font-size: 3rem;
     margin-bottom: 1rem;
-    position: static;
+    position: absolute;
+    top: -7.5rem;
+    left: 1rem;
   }
 }
 .subsidaries-section .subsidaries-content img {
@@ -580,6 +590,9 @@ section .contact-content {
     font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    position: absolute;
+    bottom: -83rem;
+    left: 13rem;
   }
 }
 @media (min-width: 641px) and (max-width: 1024px) {
@@ -587,6 +600,9 @@ section .contact-content {
     font-size: 5rem;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    position: absolute;
+    bottom: -89rem;
+    left: 20rem;
   }
 }
 

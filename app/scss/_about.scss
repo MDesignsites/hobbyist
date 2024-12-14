@@ -11,6 +11,8 @@
   flex-direction: column; // Stack content vertically
   align-items: center; // Center align content horizontally
   text-align: center; // Center text
+  font-family: "Oswald", sans-serif;
+  text-align: justify;
 
   .about-content {
       max-width: 1200px; // Limit the maximum width of content
@@ -44,13 +46,15 @@
     @media (max-width: 1024px) {
         font-size: 4rem; // Adjust font size for tablet
         margin-bottom: 2rem; // Adjust spacing for the title
-        top: 0; // Positioning at the default flow
+        position: absolute;
+        top: -3.5rem; // Positioning at the default flow
     }
 
     @media (max-width: 640px) {
-        font-size: 4rem; // Smaller font size for mobile
+        font-size: 3rem; // Smaller font size for mobile
         margin-bottom: 1rem; // Adjust spacing for the title
-        top: 0; // Positioning at the default flow
+        position: absolute;
+        top: -3rem;
     }
 }
 

@@ -12,6 +12,8 @@
         padding: 2.5rem; // p-10
         box-sizing: border-box; // Include padding in width calculation
         position: relative;
+        font-family: "Oswald", sans-serif;
+        text-align: justify;
 
         .subsidaries-title {
             font-size: 6rem; // Default font size
@@ -27,18 +29,22 @@
             top: -10rem;
             left: 1rem;
             width: 100%; // Ensure it takes full width for centering
+            text-align: center;
 
             // Responsive adjustments
             @media (max-width: 1024px) {
                 font-size: 5rem; // Adjust font size for tablet
-                margin-bottom: 2rem; // Adjust spacing for the title
-                position: static; // Use static positioning for better flow
+                margin-bottom: 1rem; // Adjust spacing for the title
+                position: absolute; // Use static positioning for better flow
+                top: -9rem;
             }
 
             @media (max-width: 640px) {
                 font-size: 3rem; // Smaller font size for mobile
                 margin-bottom: 1rem; // Adjust spacing for the title
-                position: static; // Use static positioning for better flow
+                position: absolute;
+                top: -7.5rem;
+                left: 1rem;
             }
         }
 
